@@ -11,12 +11,20 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
+//images
+import swiper1 from "../assets/images/swiper-1.jpg";
+import swiper2 from "../assets/images/swiper-2.jpg";
+import swiper3 from "../assets/images/swiper-3.jpg";
+import swiper4 from "../assets/images/swiper-4.jpg";
+import swiper5 from "../assets/images/swiper-5.jpg";
+
+
 const Home = () => {
   return (
   <section className="home">
-    <div className="container">
+
       <div className="row">
-      <>
+      
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -31,19 +39,18 @@ const Home = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+          <img src={swiper1} alt="swiper1" />
+          </SwiperSlide>
+        <SwiperSlide><img src={swiper2} alt="swiper1" /></SwiperSlide>
+        <SwiperSlide><img src={swiper3} alt="swiper1" /></SwiperSlide>
+        <SwiperSlide><img src={swiper4} alt="swiper1" /></SwiperSlide>
+        <SwiperSlide><img src={swiper5} alt="swiper1" /></SwiperSlide>
+        
       </Swiper>
-    </>
+ 
       </div>
-    </div>
+  
   </section>
   )
 }

@@ -1,0 +1,23 @@
+.home{
+    height: 100%;
+    position: relative;
+   
+
+        .row{
+            Swiper{
+           width: 100%;
+                SwiperSlide{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 1496px;
+                   img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                   }
+                }
+            }
+        }
+    }
