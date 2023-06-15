@@ -1,8 +1,9 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
-//icons
-import {FaPhoneAlt} from "react-icons/fa";
+
+//images
+import logo from "../assets/images/logo (1).svg"
 
 const Header = () => {
   return (
@@ -11,7 +12,9 @@ const Header = () => {
         <div className="row">
           <div className="autoBox">
             <div className="logo">
-              <Link to="/"></Link>
+              <Link to="/">
+                <img src={logo} alt="logo" />
+              </Link>
             </div>
             <nav className="navBar">
               <ul className="navList">
@@ -37,7 +40,9 @@ const Header = () => {
                   <NavLink to="/getInTouch">ƏLAQƏ</NavLink>
                 </li>
                 <li className="navItem">
-                  <NavLink to="+994012983"><span>{FaPhoneAlt}</span>(012) 983</NavLink>
+                  <NavLink to="+994012983">
+                    <span></span>(012) 983
+                  </NavLink>
                 </li>
               </ul>
             </nav>

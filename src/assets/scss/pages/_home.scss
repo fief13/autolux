@@ -1,22 +1,25 @@
-.home{
+.home {
     height: 100%;
     position: relative;
+  .container{
    
-
-        .row{
-            Swiper{
-           width: 50%;
-           height: 50%;
-                SwiperSlide{
-                    width: 100%;
-                 
-                  
-                   img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                   }
-                }
-            }
+    .row {
+        Swiper {
+          width: 100%;
+          height: 100%;
+        SwiperSlide {
+          display: flex;
+    justify-content: center;
+    align-items: center;
+   
+          img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+          }
+        }
         }
     }
+  }
+}
