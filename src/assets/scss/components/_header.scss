@@ -1,60 +1,94 @@
-.header{
-    .container{
-.row{
-
-.autoBox{
-   background-color: transparent;
-width: 100%;
-    z-index: 100;
-    position: fixed;
-padding: 0 150px;
-display: flex;
-justify-content: center;
-.logo{
-    width: 90px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    a{
-img{
+.header {
+  .overlay {
     width: 100%;
-    object-fit: cover;
-}
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    display: none;
+    &.active {
+      display: block;
     }
-}
-    .navBar{
+  }
+  .container {
+    .row {
+      .autoBox {
+        background-color: transparent;
         width: 100%;
+        z-index: 100;
+        position: fixed;
+        padding: 0 150px;
         display: flex;
-        align-items: center;
-     
-        .navList{
+        justify-content: center;
+        .logo {
+          width: 90px;
+          height: 90px;
+          display: flex;
+          align-items: center;
+          a {
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+        .navBar {
+          width: 100%;
+          display: flex;
+          align-items: center;
+
+          .navList {
             width: 100%;
             display: flex;
-     text-align: center;
-     justify-content: space-around;
-     font-size: 14px;
-            .navItem{
-a{
-    color: white;
-    position: relative;
-    transition: all 0.3s ease-in;
-    transform: translateX(0);
-    transform-origin: bottom left;
-    &:hover{
-    
-        padding-bottom: 20px ;
-        border-bottom: 1px solid red;
-   transform: translateX(1);
-   transform-origin: bottom right;
-     
-    }
-}
+            text-align: center;
+            justify-content: space-around;
+            font-size: 14px;
+            .navItem {
+              a {
+                color: white;
+                position: relative;
+                transition: all 0.3s ease-in;
+
+                transform-origin: bottom left;
+                transform: translateY(0);
+                &:hover {
+                  padding-bottom: 20px;
+                  border-bottom: 1px solid red;
+                  transform: translateX(1);
+                  transform-origin: bottom right;
+                }
+              }
             }
+            .brand {
+              left: 0;
+              .active {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                &:hover {
+                  display: block;
+                }
+                .dropItem {
+                  width: 70px;
+                  font-size: 14px;
+                  color: rgba(18, 18, 18, 0.75);
+                  margin: 16px;
+                  img {
+                    width: 100%;
+                    object-fit: cover;
+                  }
+                }
+              }
+            }
+          }
         }
+      }
     }
-}
-
-}
-
-    }
+  }
 }
