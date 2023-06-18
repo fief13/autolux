@@ -34,21 +34,21 @@ const Header = () => {
                 <li className="navItem">
                   <NavLink to="/about">HAQQIMIZDA</NavLink>
                 </li>
-                <li className="navItem brand">
-                  <NavLink to="/brends">
+                <li className="navItem dropdown-menu">
+                  <NavLink className="menu-btn" to="/brends">
                     BRENDLƏR
-                    <ul className="active">
-                      <li className="dropItem"><Link to="/alfa"><img src={alfa} alt="alfa" /></Link></li>
-                      <li className="dropItem"><Link to="/abarth"><img src={abarth} alt="abarth" /></Link></li>
-                      <li className="dropItem"><Link><img src={ferrari} alt="ferrari" /></Link></li>
-                      <li className="dropItem"><Link><img src={landr} alt="landr" /></Link></li>
-                      <li className="dropItem"><Link><img src={jaguar} alt="jaguar" /></Link></li>
-                      <li className="dropItem"><Link><img src={aston} alt="aston" /></Link></li>
-                      <li className="dropItem"><Link><img src={chrysler} alt="chrysler" /></Link></li>
-                      <li className="dropItem"><Link><img src={fiat} alt="fiat" /></Link></li>
-                      <li className="dropItem"><Link><img src={fiatp} alt="fiatp" /></Link></li>
-                      <li className="dropItem"><Link><img src={dodge} alt="dodge" /></Link></li>
-                      <li className="dropItem"><Link><img src={jeep} alt="jeep" /></Link></li>
+                    <ul className="menu-content">
+                      <li className="links"><Link to="/alfa"><img src={alfa} alt="alfa" /></Link></li>
+                      <li className="links"><Link to="/abarth"><img src={abarth} alt="abarth" /></Link></li>
+                      <li className="links"><Link to="/ferrari"><img src={ferrari} alt="ferrari" /></Link></li>
+                      <li className="links"><Link to="/landr"><img src={landr} alt="landr" /></Link></li>
+                      <li className="links"><Link to="/jaguar"><img src={jaguar} alt="jaguar" /></Link></li>
+                      <li className="links"><Link to="/aston"><img src={aston} alt="aston" /></Link></li>
+                      <li className="links"><Link to="/chrysler"><img src={chrysler} alt="chrysler" /></Link></li>
+                      <li className="links"><Link to="/fiat"><img src={fiat} alt="fiat" /></Link></li>
+                      <li className="links"><Link to="/fiatp"><img src={fiatp} alt="fiatp" /></Link></li>
+                      <li className="links"><Link to="/dodge"><img src={dodge} alt="dodge" /></Link></li>
+                      <li className="links"><Link to="/jeep"><img src={jeep} alt="jeep" /></Link></li>
                     </ul>
                   </NavLink>
                 </li>
