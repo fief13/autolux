@@ -33,59 +33,59 @@ const Header = () => {
                 </li>
                 <li className="navItem dropdown-menu">
                   BRENDLƏR
-                  <ul className="menu-content active">
+                  <ul className="menu-content">
                     <li className="links">
-                      <Link to="/alfa">
+                      <Link className="brand" to="/alfa">
                         <img src={alfa} alt="alfa" />
                       </Link>
                     </li>
                     <li className="links">
-                      <Link to="/abarth">
+                      <Link className="brand" to="/abarth">
                         <img src={abarth} alt="abarth" />
                       </Link>
                     </li>
                     <li className="links">
-                      <Link to="/ferrari">
+                      <Link className="brand" to="/ferrari">
                         <img src={ferrari} alt="ferrari" />
                       </Link>
                     </li>
                     <li className="links">
-                      <Link to="/landr">
+                      <Link className="brand" to="/landr">
                         <img src={landr} alt="landr" />
                       </Link>
                     </li>
                     <li className="links">
-                      <Link to="/jaguar">
+                      <Link className="brand" to="/jaguar">
                         <img src={jaguar} alt="jaguar" />
                       </Link>
                     </li>
                     <li className="links">
-                      <Link to="/aston">
+                      <Link className="brand" to="/aston">
                         <img src={aston} alt="aston" />
                       </Link>
                     </li>
                     <li className="links">
-                      <Link to="/chrysler">
+                      <Link className="brand" to="/chrysler">
                         <img src={chrysler} alt="chrysler" />
                       </Link>
                     </li>
                     <li className="links">
-                      <Link to="/fiat">
+                      <Link className="brand" to="/fiat">
                         <img src={fiat} alt="fiat" />
                       </Link>
                     </li>
                     <li className="links">
-                      <Link to="/fiatp">
+                      <Link className="brand" to="/fiatp">
                         <img src={fiatp} alt="fiatp" />
                       </Link>
                     </li>
                     <li className="links">
-                      <Link to="/dodge">
+                      <Link className="brand" to="/dodge">
                         <img src={dodge} alt="dodge" />
                       </Link>
                     </li>
                     <li className="links">
-                      <Link to="/jeep">
+                      <Link className="brand" to="/jeep">
                         <img src={jeep} alt="jeep" />
                       </Link>
                     </li>
