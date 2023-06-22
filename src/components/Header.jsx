@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from "react-router-dom";
 
 //images
@@ -16,17 +16,33 @@ import dodge from "../assets/images/dodge.png";
 import jeep from "../assets/images/jeep.jpg";
 
 const Header = () => {
+  const [autoBox, setAutoBox] = useState()
+
+const listenScrollEvent = (e) => {
+  if (window.scrollY < 70) {
+    return setAutoBox("autoBox")
+  } else if (window.scrollY > 70) {
+    return setAutoBox("autoBox2")
+  } 
+}
+
+useEffect(() => {
+  window.addEventListener('scroll', listenScrollEvent);
+  return () =>
+    window.removeEventListener('scroll', listenScrollEvent);
+}, []);
+
   return (
     <header className="header">
       <div className="container">
         <div className="row">
-          <div className="autoBox">
+          <div className={autoBox} >
             <div className="logo">
               <Link to="/">
                 <img src={logo} alt="logo" />
               </Link>
             </div>
-            <nav className="navBar">
+            <nav className="navbar">
               <ul className="navList">
                 <li className="navItem">
                   <NavLink to="/about">HAQQIMIZDA</NavLink>
