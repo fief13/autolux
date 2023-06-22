@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 //images
@@ -14,29 +14,30 @@ import fiat from "../assets/images/fiat.png";
 import fiatp from "../assets/images/fiatp.png";
 import dodge from "../assets/images/dodge.png";
 import jeep from "../assets/images/jeep.jpg";
+import phone from "../assets/images/phone-solid.svg";
+import search from "../assets/images/magnifying-glass-solid.svg";
 
 const Header = () => {
-  const [autoBox, setAutoBox] = useState()
+  const [autoBox, setAutoBox] = useState();
 
-const listenScrollEvent = (e) => {
-  if (window.scrollY < 70) {
-    return setAutoBox("autoBox")
-  } else if (window.scrollY > 70) {
-    return setAutoBox("autoBox2")
-  } 
-}
+  const listenScrollEvent = (e) => {
+    if (window.scrollY < 70) {
+      return setAutoBox("autoBox");
+    } else if (window.scrollY > 70) {
+      return setAutoBox("autoBox2");
+    }
+  };
 
-useEffect(() => {
-  window.addEventListener('scroll', listenScrollEvent);
-  return () =>
-    window.removeEventListener('scroll', listenScrollEvent);
-}, []);
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => window.removeEventListener("scroll", listenScrollEvent);
+  }, []);
 
   return (
     <header className="header">
       <div className="container">
         <div className="row">
-          <div className={autoBox} >
+          <div className={autoBox}>
             <div className="logo">
               <Link to="/">
                 <img src={logo} alt="logo" />
@@ -124,8 +125,16 @@ useEffect(() => {
                 </li>
                 <li className="navItem">
                   <NavLink to="+994012983">
-                    <span></span>(012) 983
+                    <span className="phone">
+                      <img src={phone} alt="phone" />
+                    </span>
+                    (012) 983
                   </NavLink>
+                </li>
+                <li className="navItem">
+                  <span className="search">
+                    <img src={search} alt="search" fill="#fff" />
+                  </span>
                 </li>
               </ul>
             </nav>
