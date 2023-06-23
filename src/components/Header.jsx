@@ -46,7 +46,7 @@ const Header = () => {
             <nav className="navbar">
               <ul className="navList">
                 <li className="navItem">
-                  <NavLink to="/about">HAQQIMIZDA</NavLink>
+                  <NavLink className="itemLink" to="/about">HAQQIMIZDA</NavLink>
                 </li>
                 <li className="navItem dropdown-menu">
                   BRENDLƏR
@@ -109,22 +109,22 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className="navItem">
-                  <NavLink to="/service">SERVİS</NavLink>
+                  <NavLink className="itemLink"to="/service">SERVİS</NavLink>
                 </li>
                 <li className="navItem">
-                  <NavLink to="/discount">KAMPANİYALAR</NavLink>
+                  <NavLink className="itemLink"to="/discount">KAMPANİYALAR</NavLink>
                 </li>
                 <li className="navItem">
-                  <NavLink to="/news">XƏBƏRLƏR</NavLink>
+                  <NavLink className="itemLink" to="/news">XƏBƏRLƏR</NavLink>
                 </li>
                 <li className="navItem">
-                  <NavLink to="/vakancies">VAKANSİYALAR</NavLink>
+                  <NavLink className="itemLink"to="/vakancies">VAKANSİYALAR</NavLink>
                 </li>
                 <li className="navItem">
-                  <NavLink to="/getInTouch">ƏLAQƏ</NavLink>
+                  <NavLink className="itemLink"to="/getInTouch">ƏLAQƏ</NavLink>
                 </li>
                 <li className="navItem">
-                  <NavLink to="+994012983">
+                  <NavLink className="phoneItem" to="+994012983">
                     <span className="phone">
                       <img src={phone} alt="phone" />
                     </span>
