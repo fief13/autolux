@@ -62,7 +62,9 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <h2 className="title">Brendlər</h2>
+            <span className="imageLine">
             <img src={brandimg} alt="brandimg" />
+            </span>
             <p className="brandWord">
               Avtolüks Azərbaycan MMC dünyaca tanınmış 9 brendin: Land Rover,
               Jaguar, Dodge, Jeep, Crysler, Abarth, Alfa Romeo, Fiat, Fiat
